@@ -25,7 +25,7 @@ export const FriendsProvider = ({ children }) => {
     localStorage.setItem('keenkeeper_timeline', JSON.stringify(timeline));
   }, [timeline]);
 
-  // Helper to determine status based on days since contact and goal
+  
   const determineStatus = (days, goal) => {
     if (days >= goal) return 'overdue';
     if (goal - days <= 5 || days / goal >= 0.8) return 'almost due';
@@ -38,7 +38,7 @@ export const FriendsProvider = ({ children }) => {
     const goal = parseInt(newFriend.goal || 30, 10);
     const status = determineStatus(days, goal);
 
-    // Calculate next due date: today - days_since_contact + goal
+    
     const today = new Date();
     today.setDate(today.getDate() - days + goal);
     const nextDueDate = today.toISOString().split('T')[0];
@@ -108,10 +108,10 @@ export const FriendsProvider = ({ children }) => {
       date: formattedDate
     };
 
-    // Update the friend profile
+    
     setFriends(prev => prev.map(f => {
       if (f.id === friendId) {
-        // Calculate new next due date: today + goal
+        
         const today = new Date();
         today.setDate(today.getDate() + f.goal);
         const nextDueStr = today.toISOString().split('T')[0];
@@ -126,24 +126,23 @@ export const FriendsProvider = ({ children }) => {
       return f;
     }));
 
-    // Prepend timeline entry
+    
     setTimeline(prev => [newTimelineEntry, ...prev]);
   };
 
   const snoozeFriend = (friendId, weeks = 2) => {
     setFriends(prev => prev.map(f => {
       if (f.id === friendId) {
-        // Shift next due date forward by weeks * 7 days
+        
         const currentDueDate = new Date(f.next_due_date);
         currentDueDate.setDate(currentDueDate.getDate() + (weeks * 7));
         const nextDueStr = currentDueDate.toISOString().split('T')[0];
         
-        // Also reduce days since contact, or adjust status
-        // Snoozing shifts the deadline, so status is likely on-track or almost due now
+        
         return {
           ...f,
           next_due_date: nextDueStr,
-          status: 'on-track' // Shift status to on-track since deadline is extended
+          status: 'on-track' 
         };
       }
       return f;
