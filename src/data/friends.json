@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "David Kim",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+    "email": "david.kim@example.com",
+    "days_since_contact": 62,
+    "status": "overdue",
+    "tags": ["work", "tech"],
+    "bio": "Met at TechConf 2024. Great mentor on frontend architectures.",
+    "goal": 30,
+    "next_due_date": "2026-05-15"
+  },
+  {
+    "id": 2,
+    "name": "Emma Wilson",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
+    "email": "emma.wilson@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["family", "close friend"],
+    "bio": "Cousin and hiking buddy. Always down for coffee chats.",
+    "goal": 14,
+    "next_due_date": "2026-05-20"
+  },
+  {
+    "id": 3,
+    "name": "Lisa Nakamura",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+    "email": "lisa.n@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["work", "college"],
+    "bio": "College roommate and co-worker. Brilliant UI/UX designer.",
+    "goal": 30,
+    "next_due_date": "2026-06-27"
+  },
+  {
+    "id": 4,
+    "name": "James Wright",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
+    "email": "james.w@example.com",
+    "days_since_contact": 25,
+    "status": "almost due",
+    "tags": ["hobby", "travel"],
+    "bio": "Met while backpacking in Kyoto. Fellow photography enthusiast.",
+    "goal": 30,
+    "next_due_date": "2026-06-05"
+  },
+  {
+    "id": 5,
+    "name": "Sarah Chen",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80",
+    "email": "sarah.chen@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["college", "close friend"],
+    "bio": "Best friend from university. Passionate about food and indie gaming.",
+    "goal": 14,
+    "next_due_date": "2026-06-09"
+  },
+  {
+    "id": 6,
+    "name": "Aisha Patel",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80",
+    "email": "aisha.patel@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["close friend", "neighbor"],
+    "bio": "Next-door neighbor who makes the best chai and loves local theater.",
+    "goal": 14,
+    "next_due_date": "2026-06-02"
+  },
+  {
+    "id": 7,
+    "name": "Marcus Johnson",
+    "picture": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=150&auto=format&fit=crop&q=80",
+    "email": "marcus.j@example.com",
+    "days_since_contact": 40,
+    "status": "overdue",
+    "tags": ["college", "gym"],
+    "bio": "Gym partner and college debate teammate. Great conversationalist.",
+    "goal": 30,
+    "next_due_date": "2026-05-21"
+  },
+  {
+    "id": 8,
+    "name": "Ryan O'Brien",
+    "picture": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&auto=format&fit=crop&q=80",
+    "email": "ryan.obrien@example.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["hobby", "music"],
+    "bio": "Guitarist in our amateur weekend garage band. Vinyl record collector.",
+    "goal": 45,
+    "next_due_date": "2026-07-08"
+  }
+]
